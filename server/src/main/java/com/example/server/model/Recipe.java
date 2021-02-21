@@ -46,6 +46,27 @@ public class Recipe {
     private String ingredient08;
 
     @Column
+    private String ingredient09;
+
+    @Column
+    private String ingredient010;
+
+    @Column
+    private String ingredient011;
+
+    @Column
+    private String ingredient012;
+
+    @Column
+    private String ingredient013;
+
+    @Column
+    private String ingredient014;
+
+    @Column
+    private String ingredient015;
+
+    @Column
     private String sourceLink;
 
     public Recipe() {
@@ -145,6 +166,62 @@ public class Recipe {
 
     public void setIngredient08(String ingredient08) {
         this.ingredient08 = ingredient08;
+    }
+
+    public String getIngredient09() {
+        return ingredient09;
+    }
+
+    public void setIngredient09(String ingredient09) {
+        this.ingredient09 = ingredient09;
+    }
+
+    public String getIngredient010() {
+        return ingredient010;
+    }
+
+    public void setIngredient010(String ingredient010) {
+        this.ingredient010 = ingredient010;
+    }
+
+    public String getIngredient011() {
+        return ingredient011;
+    }
+
+    public void setIngredient011(String ingredient011) {
+        this.ingredient011 = ingredient011;
+    }
+
+    public String getIngredient012() {
+        return ingredient012;
+    }
+
+    public void setIngredient012(String ingredient012) {
+        this.ingredient012 = ingredient012;
+    }
+
+    public String getIngredient013() {
+        return ingredient013;
+    }
+
+    public void setIngredient013(String ingredient013) {
+        this.ingredient013 = ingredient013;
+    }
+
+    public String getIngredient014() {
+        return ingredient014;
+    }
+
+    public void setIngredient014(String ingredient014) {
+        this.ingredient014 = ingredient014;
+    }
+
+    public String getIngredient015() {
+        return ingredient015;
+    }
+
+    public void setIngredient015(String ingredient015) {
+        this.ingredient015 = ingredient015;
     }
 
     public String getSourceLink() {
