@@ -15,16 +15,19 @@ public class Recipe {
     @Column(nullable = false)
     private String title;
 
-    @Column(nullable = false)
+    @Column
     private String netCarbs;
 
     @Column
     private String image;
 
+    @Column
+    private String course;
+
     @Column(nullable = false)
     private String ingredient01;
 
-    @Column
+    @Column(nullable = false)
     private String ingredient02;
 
     @Column
@@ -102,6 +105,14 @@ public class Recipe {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public void setCourse(String course) {
+        this.course = course;
     }
 
     public String getIngredient01() {
