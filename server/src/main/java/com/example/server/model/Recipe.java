@@ -21,53 +21,50 @@ public class Recipe {
     @Column
     private String image;
 
-    @Column
-    private String course;
+    @Column(nullable = false)
+    private String ingredient1;
 
     @Column(nullable = false)
-    private String ingredient01;
-
-    @Column(nullable = false)
-    private String ingredient02;
+    private String ingredient2;
 
     @Column
-    private String ingredient03;
+    private String ingredient3;
 
     @Column
-    private String ingredient04;
+    private String ingredient4;
 
     @Column
-    private String ingredient05;
+    private String ingredient5;
 
     @Column
-    private String ingredient06;
+    private String ingredient6;
 
     @Column
-    private String ingredient07;
+    private String ingredient7;
 
     @Column
-    private String ingredient08;
+    private String ingredient8;
 
     @Column
-    private String ingredient09;
+    private String ingredient9;
 
     @Column
-    private String ingredient010;
+    private String ingredient10;
 
     @Column
-    private String ingredient011;
+    private String ingredient11;
 
     @Column
-    private String ingredient012;
+    private String ingredient12;
 
     @Column
-    private String ingredient013;
+    private String ingredient13;
 
     @Column
-    private String ingredient014;
+    private String ingredient14;
 
     @Column
-    private String ingredient015;
+    private String ingredient15;
 
     @Column
     private String sourceLink;
@@ -107,132 +104,124 @@ public class Recipe {
         this.image = image;
     }
 
-    public String getCourse() {
-        return course;
+    public String getIngredient1() {
+        return ingredient1;
     }
 
-    public void setCourse(String course) {
-        this.course = course;
+    public void setIngredient1(String ingredient1) {
+        this.ingredient1 = ingredient1;
     }
 
-    public String getIngredient01() {
-        return ingredient01;
+    public String getIngredient2() {
+        return ingredient2;
     }
 
-    public void setIngredient01(String ingredient01) {
-        this.ingredient01 = ingredient01;
+    public void setIngredient2(String ingredient2) {
+        this.ingredient2 = ingredient2;
     }
 
-    public String getIngredient02() {
-        return ingredient02;
+    public String getIngredient3() {
+        return ingredient3;
     }
 
-    public void setIngredient02(String ingredient02) {
-        this.ingredient02 = ingredient02;
+    public void setIngredient3(String ingredient3) {
+        this.ingredient3 = ingredient3;
     }
 
-    public String getIngredient03() {
-        return ingredient03;
+    public String getIngredient4() {
+        return ingredient4;
     }
 
-    public void setIngredient03(String ingredient03) {
-        this.ingredient03 = ingredient03;
+    public void setIngredient4(String ingredient4) {
+        this.ingredient4 = ingredient4;
     }
 
-    public String getIngredient04() {
-        return ingredient04;
+    public String getIngredient5() {
+        return ingredient5;
     }
 
-    public void setIngredient04(String ingredient04) {
-        this.ingredient04 = ingredient04;
+    public void setIngredient5(String ingredient5) {
+        this.ingredient5 = ingredient5;
     }
 
-    public String getIngredient05() {
-        return ingredient05;
+    public String getIngredient6() {
+        return ingredient6;
     }
 
-    public void setIngredient05(String ingredient05) {
-        this.ingredient05 = ingredient05;
+    public void setIngredient6(String ingredient6) {
+        this.ingredient6 = ingredient6;
     }
 
-    public String getIngredient06() {
-        return ingredient06;
+    public String getIngredient7() {
+        return ingredient7;
     }
 
-    public void setIngredient06(String ingredient06) {
-        this.ingredient06 = ingredient06;
+    public void setIngredient7(String ingredient7) {
+        this.ingredient7 = ingredient7;
     }
 
-    public String getIngredient07() {
-        return ingredient07;
+    public String getIngredient8() {
+        return ingredient8;
     }
 
-    public void setIngredient07(String ingredient07) {
-        this.ingredient07 = ingredient07;
+    public void setIngredient8(String ingredient8) {
+        this.ingredient8 = ingredient8;
     }
 
-    public String getIngredient08() {
-        return ingredient08;
+    public String getIngredient9() {
+        return ingredient9;
     }
 
-    public void setIngredient08(String ingredient08) {
-        this.ingredient08 = ingredient08;
+    public void setIngredient9(String ingredient9) {
+        this.ingredient9 = ingredient9;
     }
 
-    public String getIngredient09() {
-        return ingredient09;
+    public String getIngredient10() {
+        return ingredient10;
     }
 
-    public void setIngredient09(String ingredient09) {
-        this.ingredient09 = ingredient09;
+    public void setIngredient10(String ingredient10) {
+        this.ingredient10 = ingredient10;
     }
 
-    public String getIngredient010() {
-        return ingredient010;
+    public String getIngredient11() {
+        return ingredient11;
     }
 
-    public void setIngredient010(String ingredient010) {
-        this.ingredient010 = ingredient010;
+    public void setIngredient11(String ingredient11) {
+        this.ingredient11 = ingredient11;
     }
 
-    public String getIngredient011() {
-        return ingredient011;
+    public String getIngredient12() {
+        return ingredient12;
     }
 
-    public void setIngredient011(String ingredient011) {
-        this.ingredient011 = ingredient011;
+    public void setIngredient12(String ingredient12) {
+        this.ingredient12 = ingredient12;
     }
 
-    public String getIngredient012() {
-        return ingredient012;
+    public String getIngredient13() {
+        return ingredient13;
     }
 
-    public void setIngredient012(String ingredient012) {
-        this.ingredient012 = ingredient012;
+    public void setIngredient13(String ingredient13) {
+        this.ingredient13 = ingredient13;
     }
 
-    public String getIngredient013() {
-        return ingredient013;
+    public String getIngredient14() {
+        return ingredient14;
     }
 
-    public void setIngredient013(String ingredient013) {
-        this.ingredient013 = ingredient013;
+    public void setIngredient14(String ingredient14) {
+        this.ingredient14 = ingredient14;
     }
 
-    public String getIngredient014() {
-        return ingredient014;
+    public String getIngredient15() {
+        return ingredient15;
     }
 
-    public void setIngredient014(String ingredient014) {
-        this.ingredient014 = ingredient014;
-    }
-
-    public String getIngredient015() {
-        return ingredient015;
-    }
-
-    public void setIngredient015(String ingredient015) {
-        this.ingredient015 = ingredient015;
+    public void setIngredient15(String ingredient15) {
+        this.ingredient15 = ingredient15;
     }
 
     public String getSourceLink() {
