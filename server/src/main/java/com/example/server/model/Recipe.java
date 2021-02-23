@@ -2,6 +2,7 @@ package com.example.server.model;
 
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "recipes")
@@ -68,6 +69,9 @@ public class Recipe {
 
     @Column
     private String sourceLink;
+
+    @ManyToMany
+    Set<User> likes;
 
     public Recipe() {
     }
@@ -152,9 +156,7 @@ public class Recipe {
         this.ingredient6 = ingredient6;
     }
 
-    public String getIngredient7() {
-        return ingredient7;
-    }
+    public String getIngredient7() { return ingredient7; }
 
     public void setIngredient7(String ingredient7) {
         this.ingredient7 = ingredient7;
@@ -230,5 +232,13 @@ public class Recipe {
 
     public void setSourceLink(String sourceLink) {
         this.sourceLink = sourceLink;
+    }
+
+    public Set<User> getLikes() {
+        return likes;
+    }
+
+    public void setLikes(Set<User> likes) {
+        this.likes = likes;
     }
 }

@@ -1,6 +1,7 @@
 package com.example.server.model;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "users")
@@ -19,6 +20,9 @@ public class User {
 
     @Column
     private String profilePic;
+
+    @ManyToMany
+    Set<Recipe> likedRecipes;
 
     public User() {
     }
@@ -53,5 +57,13 @@ public class User {
 
     public void setProfilePic(String profilePic) {
         this.profilePic = profilePic;
+    }
+
+    public Set<Recipe> getLikedRecipes() {
+        return likedRecipes;
+    }
+
+    public void setLikedRecipes(Set<Recipe> likedRecipes) {
+        this.likedRecipes = likedRecipes;
     }
 }
