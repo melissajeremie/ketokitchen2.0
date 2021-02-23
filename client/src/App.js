@@ -1,5 +1,4 @@
 import React from 'react';
-import Axios from 'axios';
 import './App.css';
 import {
   BrowserRouter as Router, 
@@ -7,6 +6,9 @@ import {
   Route, 
   Link
 } from "react-router-dom";
+import Recipes from './components/recipes';
+import Users from './components/users';
+import CreateRecipe from './components/createRecipe';
 
 class App extends React.Component {
   render() {

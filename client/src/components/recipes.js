@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Axios from 'axios';
 import axios from 'axios';
 
 function Recipes() {
@@ -19,7 +18,22 @@ function Recipes() {
 
     return (
         <div>
-            
+            <form className="recipeForm" onChange={ (e) => handleChange(e) } onSubmit={ (e) => handleSubmit(e) }>
+                <label>
+                    Title
+                    <input type="text" name="title" />
+                </label>
+                <label>
+                    Net carbs
+                    <input type="text" name="netCarbs" />
+                </label>
+                <label>
+                    Image
+                    <input type="text" name="image" />
+                </label>
+            </form>
         </div>
     )
 }
+
+export default recipes;
