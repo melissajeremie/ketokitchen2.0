@@ -18,6 +18,10 @@ function Recipes() {
 
     return (
         <div>
+            <h2>These are some of our favorites</h2>
+            {recipes}
+
+            <h3>Create your own recipe below:</h3>
             <form className="recipeForm" onChange={ (e) => handleChange(e) } onSubmit={ (e) => handleSubmit(e) }>
                 <label>
                     Title
