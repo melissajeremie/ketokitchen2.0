@@ -8,11 +8,9 @@ import Recipe from './Recipe';
 function Recipes() {
     const [recipes, setRecipes] = useState([]);
 
-    const url = 'http://localhost:8080/recipes';
-
     async function getRecipes() {
         try {
-            const res = await axios.get(url)
+            const res = await axios.get('http://localhost:8080/recipes')
             setRecipes(res.data);
             console.log(res);
         } catch(e) {

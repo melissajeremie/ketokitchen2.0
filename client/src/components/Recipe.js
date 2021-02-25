@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 // import Ingredients from './Ingredients';
 
 const Recipe = ({ recipe }) => {
-    const [show, setShow] = useState(false);
+    // const [show, setShow] = useState(false);
     const { title, netCarbs, image, sourceLink } = recipe.recipe;
 
     return (
