@@ -8,7 +8,6 @@ import {
 } from "react-router-dom";
 import Recipes from './components/recipes';
 import Users from './components/users';
-import CreateRecipe from './components/createRecipe';
 
 class App extends React.Component {
 
@@ -28,15 +27,9 @@ class App extends React.Component {
              <li>
                <Link to="/recipes">Recipes</Link>
              </li>
-             <li>
-               <Link to="/addrecipe">Create</Link>
-             </li>
          </ul>
 
          <Switch>
-           <Route path="/addrecipe">
-             <CreateRecipe />
-           </Route>
 
            <Route path="/recipes">
             <Recipes />
@@ -59,8 +52,15 @@ class App extends React.Component {
   }
 }
 
-export default App;
+class Home extends React.Component {
+  render() {
+    return(
+      <div className="home-div">
+        <h1>Keto Kitchen</h1>
+        <h3>Find keto recipes or share your favorite!</h3>
+      </div>
+    )
+  }
+}
 
-{/* <header className="App-header">
-<h1>Keto Kitchen</h1>
-</header> */}
+export default App;

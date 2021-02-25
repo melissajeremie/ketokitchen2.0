@@ -1,13 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { v4 as uuidv4 } from "uuid";
+
+import Recipe from './Recipe';
+
 
 function Recipes() {
-    const [recipes, setRecipes] = useState(null);
+    const [recipes, setRecipes] = useState([]);
+
+    const url = 'http://localhost:8080/recipes';
 
     async function getRecipes() {
         try {
-            const res = await axios.get('http://localhost:8080/recipes')
+            const res = await axios.get(url)
             setRecipes(res.data);
+            console.log(res);
         } catch(e) {
             console.error(e.message);
         }
@@ -17,12 +24,11 @@ function Recipes() {
     }, [])
 
     return (
-        <div>
-            <h2>These are some of our favorites</h2>
-            {recipes}
-
+        <div className="recipes">
+            <h2>Recipes</h2>
+            {recipes !== [] && recipes.map(recipe => <Recipe key={uuidv4()} recipe={recipe} />)}
             <h3>Create your own recipe below:</h3>
-            <form className="recipeForm" onChange={ (e) => handleChange(e) } onSubmit={ (e) => handleSubmit(e) }>
+            <form className="recipeForm" >
                 <label>
                     Title
                     <input type="text" name="title" />
@@ -34,10 +40,11 @@ function Recipes() {
                 <label>
                     Image
                     <input type="text" name="image" />
+                    <input type="submit" value="submit" />
                 </label>
             </form>
         </div>
     )
 }
 
-export default recipes;
+export default Recipes;
